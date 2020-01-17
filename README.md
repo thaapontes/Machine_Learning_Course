@@ -10,7 +10,7 @@ This repository contains the exercises completed in the machine learning course 
 A equação para o modelo, descrita na imagem abaixo, leva em consideração a entrada "x" e os parâmetros theta0 e theta1 para descobrir o objetivo, "y". 
 A questão é como encontrar os melhores valores para os parâmetros theta0 e theta1. Para tanto, é preciso minimizar a função custo através do algoritmo gradiente descendente:
 ![image](https://user-images.githubusercontent.com/44439904/72576873-a2cd0980-38af-11ea-908b-11d8553e49b9.png)
-_1 - Equações para aplicação modelo de regressão linear com uma vaiável_
+_Figura 1 - Equações para aplicação modelo de regressão linear com uma vaiável_
 
 Na prática, o código para calcular a função custo J pode ser visto abaixo: 
 ````
