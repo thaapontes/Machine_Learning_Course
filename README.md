@@ -53,3 +53,8 @@ end
 end
 ````
 obs: alpha pequeno demora a convergir, alpha muito alto talvez não decresça a função custo. Para que o algoritmo funcione, a atualização de theta0 e theta1 deve ser feita simultaneamente.
+
+  #### b. Múltiplas variáveis
+  Nesse caso, terão várias features no modelo, ampliando também a quantidade de theta. A solução do algoritmo Gradiente Descendente para minimizar a Função Custo também é válida, mas é interessante equiparar as escalas das variáveis quando elas forem eventualmente diferentes, utilizando feature scaling e/ou Normalização pela Média. Porém essa não é a única opção para encontrar os parâmetros, também é possível utilizar Equação Normal, uma solução mais rápida que não utiliza alpha ou iterações, e nem precisa de feature scaling. 
+  #####Mas quando usar Gradiente Descendente ou Equação Normal?
+  Para um número n de features alto, é recomendado o gradiente descendente, porque equação normal realiza a inversa da matriz X, o que deixa o processo lento em casos de n elevado. Já para um n pequeno, a equação normal é mais recomendada, por não ter iterações e não utilizar alpha.
