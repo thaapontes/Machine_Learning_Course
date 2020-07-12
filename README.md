@@ -63,9 +63,9 @@ obs: alpha pequeno demora a convergir, alpha muito alto talvez não decresça a 
 
   Com a regressão logística queremos estimar variáveis discretas, e o que muda com relação a linear é o modelo:
   
-    ````
+    
     h = sigmoid(X*theta);
-    ````
+   
 
   Para evitar overfitting, pode-se reduzir o número de features ou usar regularização, que basicamente acrescenta um termo de regularização a função custo:
     ````
